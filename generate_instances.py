@@ -18,7 +18,7 @@ def make_nqueens_instance(n=12, instance_id=1):
     Membuat instance N-Queens dengan 1 Ratu terkunci (Fixed Queen).
     Posisi Ratu ditentukan secara acak berdasarkan instance_id sebagai seed.
     """
-    # Gunakan ID instance sebagai basis seed agar hasil unik per file
+    # Gunakan ID instance sebagai basis seed atau 'kunci' agar hasil unik per file
     seed = 100 + instance_id
     rnd = random.Random(seed)
 
@@ -54,4 +54,5 @@ def main():
     print("\n--- Selesai generate 15 instance ---")
 
 if __name__ == '__main__':
+
     main()
