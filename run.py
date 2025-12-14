@@ -2,9 +2,7 @@ import json
 import time
 from pathlib import Path
 
-# ==========================================
-# BAGIAN 1: EVALUATOR (DIPERBARUI)
-# ==========================================
+# BAGIAN 1: EVALUATOR
 def evaluate_solution(sol, instance):
     """
     Mengembalikan skor kualitas solusi (0.0 - 1.0).
@@ -65,10 +63,7 @@ def evaluate_solution(sol, instance):
     
     return final_score
 
-# ==========================================
 # BAGIAN 2: ALGORITMA
-# ==========================================
-
 # --- Helper: Cek Keamanan Standar (Untuk Algo A) ---
 def is_safe(board, row, col, n):
     for i in range(n):
@@ -191,9 +186,7 @@ def algo_B(instance):
         # Kembalikan papan parsial
         return board, nodes_explored
 
-# ==========================================
 # BAGIAN 3: EKSEKUSI (Disesuaikan)
-# ==========================================
 def main():
     # Folder tempat instance disimpan
     data_dir = Path(__file__).parent / 'data'
@@ -245,4 +238,5 @@ def main():
     print("Selesai eksekusi 15 instance.")
 
 if __name__ == '__main__':
+
     main()
