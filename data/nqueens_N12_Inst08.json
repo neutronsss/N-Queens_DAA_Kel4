@@ -1,0 +1,13 @@
+{
+  "project": "n_queens",
+  "description": "N-Queens N = 12 dengan 1 Ratu terkunci (Varian 8)",
+  "n": 12,
+  "fixed_queens": [
+    [
+      2,
+      11
+    ]
+  ],
+  "seed_used": 108,
+  "instance_id": 8
+}
